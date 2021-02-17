@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 思路:首先给main,left,right设置float:left
+			给left设置margin-left:-100%,让left在main里面的左侧显示,设置position属性,使用left:-本身width值
+			实现left在main的左侧显示
+			给right设置margin-left:-200px,让right在main里面的左侧显示,设置position属性,使用left:本身width值,使right元素右移 */
+			body,html{
+				height: 100%;
+				padding: 0;
+				margin: 0;
+			}
+			body{
+				padding-left: 100px;
+				padding-right: 200px;
+			}
+			.left{
+				position: relative;
+				background: coral;
+				width: 100px;
+				height: 100%;
+				float: left;
+				margin-left: -100%;
+				left: -100px;
+			}
+			.main {
+				background: lightblue;
+				width: 100%;
+				height: 100%;
+				float: left;
+			}
+			.right {
+				background: gray;
+				width: 200px;
+				height: 100%;
+				float: left;
+				margin-left: -200px;
+				position: relative;
+				left: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">中</div>
+		<div class="left">左栏</div>
+		<div class="right">右栏</div>
+	</body>
+</html>
