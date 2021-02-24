@@ -140,16 +140,35 @@ color:red(颜色英文) rgb( ) rgba( )比rgb多一个透明属性 #+16进制
 2.通用兄弟选择器选中的是指定选择器后面某个选择器选中的所有标签，无论有没有被隔开都可以选中
 # 序选择器
 CSS3中新增的选择器最具代表性的就是序选择器<br>
-1.同级别的第几个<br>
+#### 1.同级别的第几个<br>
 :first-child 选中同级别的第一个标签<br>
 :last-child 选中同级别中的最后一个标签<br>
-:nth-child(n)选中同级别中的第n个标签<br>
+:nth-child(n/odd/even/xn+y)选中同级别中的第n个标签/选中同级别中的奇数标签/选中同级别中的偶数标签/n从0开始,x和y由用户定值<br>
 :nth-last-child(n)选中同级别中的倒数第n个标签<br>
 :only-child 选中父元素中唯一的元素<br>
 注意点：不区分类型<br>
-2.同类型的第几个
+#### 2.同类型的第几个
 :first-of-type 选中同级别中同类型的第一个标签<br>
 :last-of-type 选中同级别中同类型的最后一个标签<br>
-:nth-of-type(n) 选中同级别中同类型的第n个标签<br>
+:nth-of-type(n/odd/even/xn+y) 选中同级别中同类型的第n个标签/同nth-child(odd/even/xn+y)用法<br>
 :nth-last-of-type(n)选中同级别中同类型的最倒数第n个标签<br>
 :only-of-type 选中父元素中唯一类型的某个标签
+# 属性选择器
+作用：根据指定名称找到对应的标签，然后设置属性<br>
+格式：
+````
+[attribute]
+作用：根据指定名称找到对应的标签，然后设置属性
+例子：p[id]{属性：值}，找到设置id的p标签，然后设置属性
+[attribute=value]
+作用：找到有指定属性，并且属性的取值等于value的标签，然后设置属性
+例子：p[class=cc]{属性：值}，找到class为cc的p标签，然后设置属性
+最常见的就是区分input的属性
+
+[attribute^=value]
+作用：找到attribute属性值为value开头的标签，设置属性
+[attribute$=value]
+作用：找到attribute属性值为value结尾的标签，设置属性
+[attribute*=value]
+作用：找到attribute属性值包含value的标签，设置属性
+````
