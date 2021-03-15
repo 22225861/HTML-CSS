@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			   .box{
+			        width: 200px;
+			        height: 200px;
+			        padding: 20px;
+			        display: flex;                               
+					flex-direction:row;
+			        justify-content: space-between; /*设置两端对齐*/
+			        border: 2px solid #ccc;
+			        border-radius: 10px;
+			    }
+			    .item{
+			        width: 40px;
+			        height: 40px;
+			        border-radius: 50%;
+			        background-color: #666;
+			    }
+			    .item:nth-child(2){
+			        align-self: center; /*垂直方向居中*/
+			    }
+			    .item:nth-child(3){
+			        align-self: flex-end; /*垂直方尾对齐*/
+			    }
+		</style>
+	</head>
+	<body>
+		  <div class="box">
+		        <div class="item"></div>
+		        <div class="item"></div>
+		        <div class="item"></div>
+		    <                               
+		 
+	</body>
+</html>
