@@ -57,13 +57,13 @@ flex-shrink 决定子元素如何收缩
 						超出范围*flex-shrink总和*收缩比例/所有收缩比例之和
 flex-basis 设置base size
 决定base size的因素，优先级高到低
-						max-width/min-width/max-height/min-height
-						flex-basis
-						width/height
-						内容本身size
+	max-width/min-width/max-height/min-height
+	flex-basis
+	width/height
+	内容本身size
 flex 是flex-grow|| flex-shrink||flex-basis简写 
 flex:
-	无单位数 会被视为<flex-grow>的值
+    无单位数 会被视为<flex-grow>的值
 	有单位数 会被是为<flex-basis>的值
 	关键字 none auto initial
 										
