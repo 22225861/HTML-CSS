@@ -61,10 +61,11 @@ flex-basis 设置base size
 						flex-basis
 						width/height
 						内容本身size
-flex 是flex-grow|| flex-shrink||flex-basis简写 flex:
-												无单位数 会被视为<flex-grow>的值
-												有单位数 会被是为<flex-basis>的值
-												关键字 none auto initial
+flex 是flex-grow|| flex-shrink||flex-basis简写 
+flex:
+	无单位数 会被视为<flex-grow>的值
+	有单位数 会被是为<flex-basis>的值
+	关键字 none auto initial
 										
 										
 ````
